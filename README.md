@@ -63,6 +63,10 @@ plt.title("Gradient Descent on 50_Startups Dataset")
 
 plt.show()
 
+## OUTPUT:
+<img width="645" height="491" alt="Screenshot 2026-04-22 090833" src="https://github.com/user-attachments/assets/4451a705-01c9-462f-99af-bbe21294ed60" />
+
+
 
 ## Result:
 Thus the program to implement the linear regression using gradient descent is written and verified using python programming.
