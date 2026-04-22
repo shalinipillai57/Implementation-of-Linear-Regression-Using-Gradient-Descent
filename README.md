@@ -18,17 +18,16 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# Load dataset
+
 data = pd.read_csv("Startup.csv")
 
-# Select one feature (R&D Spend) and target (Profit)
 X = data['R&D Spend'].values
 y = data['Profit'].values
 
-# Normalize (important for gradient descent)
+
 X = (X - X.mean()) / X.std()
 
-# Initialize parameters
+
 m = 0
 b = 0
 
@@ -36,7 +35,7 @@ learning_rate = 0.01
 epochs = 1000
 n = len(X)
 
-# Gradient Descent
+
 for i in range(epochs):
     y_pred = m * X + b
     
@@ -51,10 +50,10 @@ for i in range(epochs):
 print("Slope (m):", m)
 print("Intercept (b):", b)
 
-# Predictions for plotting
+
 y_pred = m * X + b
 
-# Plot
+
 plt.scatter(X, y)
 plt.plot(X, y_pred)
 
